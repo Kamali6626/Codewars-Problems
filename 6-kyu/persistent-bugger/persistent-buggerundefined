@@ -1,0 +1,17 @@
+int persistence(long long n){
+  if(n<10){
+    return 0;
+  }
+  int count=0;
+  while(n>=10){
+  long long ans=1;
+  while(n>0){
+ int rem=n%10;
+     ans *=rem;
+    n/=10;
+}
+  n=ans;
+  count++;
+  }
+  return count;
+}
