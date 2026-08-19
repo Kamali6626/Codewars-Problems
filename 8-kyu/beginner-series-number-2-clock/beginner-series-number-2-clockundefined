@@ -1,0 +1,7 @@
+int past(int h, int m, int s) {
+  long long h_seconde=h*3600000;
+  long long m_seconde=m*60000;
+  long long s_seconde=s*1000;
+  long long result=h_seconde + m_seconde + s_seconde;
+  return result;
+}
