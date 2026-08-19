@@ -1,0 +1,15 @@
+#include <string>
+#include <vector>
+using namespace std;
+vector<string> friendOrFoe(const vector<string>& input) {
+ vector<string> ans; 
+    
+    for(int i = 0; i < input.size(); i++) {
+        if(input[i].length() == 4) {
+            ans.push_back(input[i]); 
+        }
+    }
+    
+    return ans;
+}
+​
