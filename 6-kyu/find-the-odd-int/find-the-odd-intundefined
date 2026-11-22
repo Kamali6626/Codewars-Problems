@@ -1,0 +1,18 @@
+#include <vector>
+​
+int findOdd(const std::vector<int>& numbers){
+  int count{},length=numbers.size();
+  for(int i{};i<length;i++){
+    count = 0;
+    for(int j{};j<length;j++){
+      if(numbers[i]==numbers[j]){
+        count++;
+        }
+    }
+    if(count%2 !=0){
+      return numbers[i];
+    }
+    }
+   
+  return numbers[0];
+}
